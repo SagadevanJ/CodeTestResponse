@@ -5,7 +5,6 @@
     <classes>
       <class name="testCases.OrikonTestCase">
         <methods>
-          <include name="TC04_TermsPage"/>
           <include name="init"/>
           <include name="objectCall"/>
           <include name="TC05_SuccessfullPage"/>

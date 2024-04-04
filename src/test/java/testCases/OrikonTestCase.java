@@ -67,19 +67,4 @@ public void TC05_SuccessfullPage()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

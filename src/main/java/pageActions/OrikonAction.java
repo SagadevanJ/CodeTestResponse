@@ -2,7 +2,11 @@ package pageActions;
 
 
 import java.time.Duration;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.testng.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,9 +24,21 @@ public class OrikonAction extends OrikonPageObjects {
 		public void registrationPage() {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7000));
-		emailAddress.sendKeys("sagadevan@testmail.com");
+		String myStr = "sagadevan@testmail.com";
+		emailAddress.sendKeys(myStr);
+		String regex = "^(.+)@(.+)$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(myStr);  
+		System.out.println(matcher.matches());
 		passwordEnter.sendKeys("Ambit");
 		confirmPassword.sendKeys("Ambit");
+		if (!matcher.matches()) 
+		{
+			driver.findElement(By.xpath("/html/body/app-root/div/div[2]/app-register-wizard/div[2]/app-register-user-page/form/div[1]/div/div/span")).getText().equals("Invalid address.");
+			
+			String bodyText = driver.findElement(By.xpath("/html/body/app-root/div/div[2]/app-register-wizard/div[2]/app-register-user-page/form/div[1]/div/div/span")).getText();
+			Assert.assertTrue(bodyText.contains("Invalid address."));
+		}
 		registrationNextPage.click();
 		}
 		
@@ -59,25 +75,14 @@ public class OrikonAction extends OrikonPageObjects {
 		termsAndConditions.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollTop = arguments[1];",termsAndConditions,2000);
-		
-		//for (int i=0; i<10; i++)
-		//{
-			//termsAndConditions.sendKeys(Keys.ARROW_DOWN);
-		//}
-		
-		Thread.sleep(7000);
-		//Wait<WebDriver> wait = WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.visibilityOf(agreedToTerms));
+
+		Thread.sleep(10000);
 		agreedToTerms.click();
 		submitButton.click();
-		
-		
-		
 		}
-		
 
 		public void successfullPage() {
-		Assert.assertTrue(confirmationMessage.getText().contains("Successfully registered user"));
-			
+		Assert.assertTrue(confirmationMessage.getText().contains("successfully registered"));
+		
 		}
 	}

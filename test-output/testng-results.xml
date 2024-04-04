@@ -1,147 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-02T10:28:51 IST" name="Default suite" finished-at="2024-04-02T10:32:05 IST" duration-ms="193140">
+  <suite started-at="2024-04-04T16:40:58 IST" name="Default suite" finished-at="2024-04-04T16:41:18 IST" duration-ms="19728">
     <groups>
     </groups>
-    <test started-at="2024-04-02T10:28:51 IST" name="Default test" finished-at="2024-04-02T10:32:05 IST" duration-ms="193140">
+    <test started-at="2024-04-04T16:40:58 IST" name="Default test" finished-at="2024-04-04T16:41:18 IST" duration-ms="19728">
       <class name="testCases.OrikonTestCase">
-        <test-method is-config="true" signature="init()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:47 IST" name="init" finished-at="2024-04-02T10:28:51 IST" duration-ms="4276" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:40:53 IST" name="init" finished-at="2024-04-04T16:40:58 IST" duration-ms="4489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="objectCall()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:51 IST" name="objectCall" finished-at="2024-04-02T10:28:52 IST" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="objectCall()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:40:58 IST" name="objectCall" finished-at="2024-04-04T16:40:58 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectCall -->
-        <test-method signature="TC01_RegistrationPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:52 IST" name="TC01_RegistrationPage" finished-at="2024-04-02T10:28:52 IST" duration-ms="521" status="PASS">
+        <test-method signature="TC01_RegistrationPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:40:58 IST" name="TC01_RegistrationPage" finished-at="2024-04-04T16:40:59 IST" duration-ms="518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_RegistrationPage -->
-        <test-method signature="TC02_ContactPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:52 IST" name="TC02_ContactPage" finished-at="2024-04-02T10:28:57 IST" duration-ms="4392" status="PASS">
+        <test-method signature="TC02_ContactPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:40:59 IST" name="TC02_ContactPage" finished-at="2024-04-04T16:41:04 IST" duration-ms="5663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC02_ContactPage -->
-        <test-method signature="TC03_PaymentPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:57 IST" name="TC03_PaymentPage" finished-at="2024-04-02T10:28:57 IST" duration-ms="849" status="PASS">
+        <test-method signature="TC03_PaymentPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:41:04 IST" name="TC03_PaymentPage" finished-at="2024-04-04T16:41:05 IST" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC03_PaymentPage -->
-        <test-method signature="TC04_TermsPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:28:57 IST" name="TC04_TermsPage" finished-at="2024-04-02T10:29:05 IST" duration-ms="7173" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.support.ui.Wait.until(java.util.function.Function)" because "pageActions.OrikonAction.wait" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.Wait.until(java.util.function.Function)" because "pageActions.OrikonAction.wait" is null
-at pageActions.OrikonAction.termsPage(OrikonAction.java:70)
-at testCases.OrikonTestCase.TC04_TermsPage(OrikonTestCase.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="TC04_TermsPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:41:05 IST" name="TC04_TermsPage" finished-at="2024-04-04T16:41:15 IST" duration-ms="10349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04_TermsPage -->
-        <test-method signature="TC05_SuccessfullPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-02T10:29:05 IST" name="TC05_SuccessfullPage" finished-at="2024-04-02T10:32:05 IST" duration-ms="180041" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43671b4f60e8c0c84702fd7679744d21, findElement {using=xpath, value=/html/body/app-root/div/div[2]/app-register-wizard/div[2]/app-register-complete-page/p[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\TashNila\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61926/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43671b4f60e8c0c84702fd7679744d21]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43671b4f60e8c0c84702fd7679744d21, findElement {using=xpath, value=/html/body/app-root/div/div[2]/app-register-wizard/div[2]/app-register-complete-page/p[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\TashNila\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61926/devtoo..., se:cdpVersion: 123.0.6312.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43671b4f60e8c0c84702fd7679744d21
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:403)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-at pageActions.OrikonAction.successfullPage(OrikonAction.java:80)
-at testCases.OrikonTestCase.TC05_SuccessfullPage(OrikonTestCase.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
-... 44 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TC05_SuccessfullPage()[pri:0, instance:testCases.OrikonTestCase@4803b726]" started-at="2024-04-04T16:41:15 IST" name="TC05_SuccessfullPage" finished-at="2024-04-04T16:41:18 IST" duration-ms="2261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05_SuccessfullPage -->
